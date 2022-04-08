@@ -23,49 +23,53 @@ const Temapp = () => {
 
 	return (
 		<>
-			<div className='box'>
-				<div className='inputData'>
-					<input type="search"
-						className="inputFeild"
-						onChange={(event) => {
-							setSearch(event.target.value)
-						}}
-					/>
-				</div>
-
-
-				{!city ? (
-					<p>No Data Found</p>
-				) : (
-					<div>
-						<div className='info' style={{ textAlign: 'center' }}>
-							<h2 className='location'>
-								<i><FaStreetView /></i>{search}
-							</h2>
-
-							<div style={{ display: 'flex', textAlign: 'center', marginLeft: '260px', }}>
-								<p style={{ marginLeft: '10px', marginRight: '10px' }}> </p>
-							</div>
-							<p>{ }</p>
-							<h1 className='temp'>{city.temp}°C  </h1>
-							<h3 className='tempmin_max' >Min:25.5°C  |Max: 25.5°C</h3>
-
-
+			<body style={{ backgroundColor: 'LightBlue' }}>
+				<div >
+					<h2 className='text-center ' style={{ padding: '10px', color: 'white' }}>Weather App</h2>
+					<div className='box'>
+						<div className='inputData'>
+							<input type="search"
+								className="inputFeild"
+								onChange={(event) => {
+									setSearch(event.target.value)
+								}}
+							/>
 						</div>
-						<div className='wave1'></div>
-						<div className="wave2"></div>
-						<div className='wave3'></div>
+
+
+						{!city ? (
+							<p>No Data Found</p>
+						) : (
+							<div>
+								<div className='info' style={{ textAlign: 'center' }}>
+									<h2 className='location'>
+										<i><FaStreetView /></i>{search}
+									</h2>
+
+									<div style={{ display: 'flex', textAlign: 'center', marginLeft: '260px', }}>
+										<p style={{ marginLeft: '10px', marginRight: '10px' }}> </p>
+									</div>
+									<p>{ }</p>
+									<h1 className='temp'>{city.temp}°C  </h1>
+									<h3 className='tempmin_max' >Min:25.5°C  |Max: 25.5°C</h3>
+
+
+								</div>
+								<div className='wave1'></div>
+								<div className="wave2"></div>
+								<div className='wave3'></div>
+							</div>
+						)
+
+						}
+
+
+
+
+
 					</div>
-				)
-
-				}
-
-
-
-
-
-			</div>
-
+				</div>
+			</body>
 		</>
 	)
 }
