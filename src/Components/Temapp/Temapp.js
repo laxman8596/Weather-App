@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Style from '../css/Style.css';
 import { FaStreetView } from 'react-icons/fa';
 
+
+
 const Temapp = () => {
 
 	const [city, setCity] = useState(null);
@@ -23,9 +25,11 @@ const Temapp = () => {
 
 	return (
 		<>
-			<body style={{ backgroundColor: 'LightBlue' }}>
+			<body style={{
+				backgroundColor: '#76BA99'
+			}}>
 				<div >
-					<h2 className='text-center ' style={{ padding: '10px', color: 'white' }}>Weather App</h2>
+					<h2 className='text-center ' style={{ padding: '10px', }}>Weather App</h2>
 					<div className='box'>
 						<div className='inputData'>
 							<input type="search"
