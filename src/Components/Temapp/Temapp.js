@@ -26,10 +26,13 @@ const Temapp = () => {
 	return (
 		<>
 			<body style={{
-				backgroundColor: '#76BA99'
+				backgroundColor: '#DAEAF1'
 			}}>
 				<div >
-					<h2 className='text-center ' style={{ padding: '10px', }}>Weather App</h2>
+					<h2 style={{
+						padding: '10px', fontSize: '30px', textAlign: 'center', paddingTop: '10px',
+						fontFamily: 'sans-serif'
+					}}>Weather App</h2>
 					<div className='box'>
 						<div className='inputData'>
 							<input type="search"
